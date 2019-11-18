@@ -1,6 +1,11 @@
 import React from 'react'
 import ReactDom from 'react-dom'
+import PrimeiroComponente from "./components/PrimeiroComponente";
 
 const elemento = document.getElementById('root')
-const jsx = <h1>Olá React</h1>
-ReactDom.render(jsx, elemento)
+
+ReactDom.render(
+  <div>
+    <PrimeiroComponente/>
+  </div>
+, elemento)

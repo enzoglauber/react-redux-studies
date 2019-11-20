@@ -2,20 +2,23 @@ import React from 'react';
 import ReactDom from 'react-dom';
 
 // import FamiliaSilva from './components/FamiliaSilva';
-import Familia from './components/Familia';
-import Membro from './components/Membro';
-
+// import Familia from './components/Familia';
+// import Membro from './components/Membro';
 // import FamiliaSilva from './components/FamiliaSilva';
 // import PrimeiroComponente from "./components/PrimeiroComponente";
 // import { CompA, CompB as B } from "./components/DoisComponente";
+import ComponenteComFuncao  from "./components/ComponenteComFuncao";
+
 const elemento = document.getElementById('root')
 
 ReactDom.render(
   <div>
-    <Familia sobrenome="Machado">
+    <ComponenteComFuncao></ComponenteComFuncao>
+
+    {/* <Familia sobrenome="Machado">
       <Membro nome="Enzo Glauber de Lima"></Membro>
       <Membro nome="Mary"></Membro>
-    </Familia>
+    </Familia> */}
     
     {/* <Familia sobrenome="Legal">
       <Membro nome="Jeol"></Membro>

@@ -14,7 +14,7 @@ ReactDom.render(
   <div>
     <Familia sobrenome="Machado">
       <Membro nome="Enzo Glauber de Lima"></Membro>
-      {/* <Membro nome="Mary"></Membro> */}
+      <Membro nome="Mary"></Membro>
     </Familia>
     
     {/* <Familia sobrenome="Legal">

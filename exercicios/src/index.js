@@ -5,6 +5,7 @@ import ReactDom from 'react-dom';
 import Familia from './components/Familia';
 import Membro from './components/Membro';
 
+// import FamiliaSilva from './components/FamiliaSilva';
 // import PrimeiroComponente from "./components/PrimeiroComponente";
 // import { CompA, CompB as B } from "./components/DoisComponente";
 const elemento = document.getElementById('root')
@@ -12,14 +13,16 @@ const elemento = document.getElementById('root')
 ReactDom.render(
   <div>
     <Familia sobrenome="Machado">
-      <Membro nome="Enzo Glauber de Lima" ></Membro>
-      <Membro nome="Mary"></Membro>
+      <Membro nome="Enzo Glauber de Lima"></Membro>
+      {/* <Membro nome="Mary"></Membro> */}
     </Familia>
     
-    <Familia sobrenome="Legal">
+    {/* <Familia sobrenome="Legal">
       <Membro nome="Jeol"></Membro>
       <Membro nome="Carol"></Membro>
-    </Familia>
+    </Familia> */}
+
+    {/* <FamiliaSilva sobrenome="Legal"></FamiliaSilva> */}
     {/* <CompA valor="Olá eu sou A"></CompA>
     <B valor="Olá eu sou B"></B>
     <PrimeiroComponente valor="Bom dia!"/> */}

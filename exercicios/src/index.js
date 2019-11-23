@@ -8,13 +8,15 @@ import ReactDom from 'react-dom';
 // import PrimeiroComponente from "./components/PrimeiroComponente";
 // import { CompA, CompB as B } from "./components/DoisComponente";
 // import ComponenteComFuncao  from "./components/ComponenteComFuncao";
-import Pai  from "./components/Pai";
+// import Pai  from "./components/Pai";
+import ComponentClasse  from "./components/ComponentClasse";
 
 const elemento = document.getElementById('root')
 
 ReactDom.render(
   <div>
-    <Pai></Pai>
+    <ComponentClasse valor="Sou um componente de classe!"></ComponentClasse>
+    {/* <Pai></Pai> */}
     
     {/* <ComponenteComFuncao></ComponenteComFuncao> */}
 

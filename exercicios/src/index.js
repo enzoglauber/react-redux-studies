@@ -7,13 +7,16 @@ import ReactDom from 'react-dom';
 // import FamiliaSilva from './components/FamiliaSilva';
 // import PrimeiroComponente from "./components/PrimeiroComponente";
 // import { CompA, CompB as B } from "./components/DoisComponente";
-import ComponenteComFuncao  from "./components/ComponenteComFuncao";
+// import ComponenteComFuncao  from "./components/ComponenteComFuncao";
+import Pai  from "./components/Pai";
 
 const elemento = document.getElementById('root')
 
 ReactDom.render(
   <div>
-    <ComponenteComFuncao></ComponenteComFuncao>
+    <Pai></Pai>
+    
+    {/* <ComponenteComFuncao></ComponenteComFuncao> */}
 
     {/* <Familia sobrenome="Machado">
       <Membro nome="Enzo Glauber de Lima"></Membro>

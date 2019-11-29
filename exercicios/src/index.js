@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import Contador from './components/Contador';
+import Hook from './components/Hook';
 
+// import Contador from './components/Contador';
 // import FamiliaSilva from './components/FamiliaSilva';
 // import Familia from './components/Familia';
 // import Membro from './components/Membro';
@@ -16,7 +17,8 @@ const elemento = document.getElementById('root')
 
 ReactDom.render(
   <div>
-    <Contador numero={0}></Contador>
+    <Hook></Hook>
+    {/* <Contador numero={10}></Contador> */}
     {/* <ComponentClasse valor="Sou um componente de classe!"></ComponentClasse> */}
     {/* <Pai></Pai> */}
     

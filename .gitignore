@@ -1,1 +1,2 @@
 todo-app/back/node_modules
+*.log

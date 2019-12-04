@@ -1,3 +1,4 @@
 todo-app/back/node_modules
 todo-app/front/node_modules
+exercicios_react/node_modules
 *.log

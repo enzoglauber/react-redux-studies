@@ -19,3 +19,11 @@ export const search = () => {
   //       axios.get(`${URL}?sort=-createdAt${search}`)
   //           .then(resp => this.setState({...this.state, description, list: resp.data}))
 }
+
+export const add = (description) => {
+  const request = axios.post(URL, { description })
+  return {
+    type: 'TODO_ADDED',
+    payload: request
+  }
+}

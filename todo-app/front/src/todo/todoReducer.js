@@ -1,19 +1,4 @@
-const STATE = {
-  description: 'Ler livro',
-  list: [{
-    _id: 1,
-    description: "Pagar fatura do cartão",
-    done: true
-  }, {
-    _id: 2,
-    description: "Reunião com a equipe às 10:00",
-    done: false
-  }, {
-    _id: 3,
-    description: "Consulta médicas na terça depois do almoço",
-    done: false
-  }]
-}
+const STATE = { description: '', list: [] }
 
 export default (state = STATE, action) => {
   return switchState(state, action)
@@ -22,6 +7,7 @@ export default (state = STATE, action) => {
 const switchState = (state, action) => {
   let cases = {
     'DESCRIPTION_CHANGED': () => ({ ...state, description: action.payload }),
+    'TODO_SEARCHED': () => ({ ...state, list: action.payload.data }),
     'default': () => (state)
   };
 

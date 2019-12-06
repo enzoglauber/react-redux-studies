@@ -5,8 +5,9 @@ create-react-app mui-theme --typescripts
 
 ## Links
 * [TypeScript, Sass & Material UI](https://medium.com/@bhattacharyya.abhra/create-react-app-with-typescript-sass-material-ui-5a22730f6cae) - Create React App with TypeScript, Sass & Material UI
-* [README](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) - Template README
+* [README](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) - Template README
 
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

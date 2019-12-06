@@ -1,9 +1,21 @@
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import React from 'react';
 
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      width: '100%',
+      maxWidth: 500,
+    }
+  })
+)
+
 export default function Types() {
+  const classes = useStyles()
+
   return (
-    <div className="legal">
+    <div className={classes.root}>
       <Typography variant="h1" component="h2" gutterBottom>
         h1. Heading
       </Typography>

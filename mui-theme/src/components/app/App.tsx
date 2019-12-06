@@ -1,17 +1,19 @@
 import './App.scss';
 
-import Button from '@material-ui/core/Button';
+import { Button, Container } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import React from 'react';
 
-import { theme } from '../theme/acelero-theme';
+import { theme } from '../../shared/theme/acelero-theme';
+import Types from '../types/Types';
 
 export default () => (
   <ThemeProvider theme={theme}>
-    <div className='container'>
+    <Container>
+      <Types></Types>
       <Button variant="contained" color="primary">
         Olá Mundo
       </Button>
-    </div>
+    </Container>
   </ThemeProvider>
 )

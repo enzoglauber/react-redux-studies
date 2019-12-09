@@ -9,10 +9,12 @@ import Buttons from '../examples/Buttons';
 import Checks from '../examples/Checks';
 import Types from '../examples/Types';
 import Radios from '../examples/Radios';
+import Menu from '../examples/Menu';
 
 export default () => (
   <ThemeProvider theme={theme}>
     <Container>
+      <Menu />
       <Types />
       <Buttons />
       <Checks />

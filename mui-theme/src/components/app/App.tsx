@@ -10,6 +10,7 @@ import Checks from '../examples/Checks';
 import Types from '../examples/Types';
 import Radios from '../examples/Radios';
 import Menu from '../examples/Menu';
+import Card from '../examples/Card';
 
 export default () => (
   <ThemeProvider theme={theme}>
@@ -17,6 +18,7 @@ export default () => (
       <Menu />
       <Types />
       <Buttons />
+      <Card />
       <Checks />
       <Radios />
     </Container>

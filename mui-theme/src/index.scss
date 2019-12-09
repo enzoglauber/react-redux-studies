@@ -1,14 +1,8 @@
 @import './shared/sass/font-face.scss';
 
-@font-face {
-  font-family: 'Effra';
-  src: url('./shared/fonts/effra/EFFRA_STD_RG.TTF');
-}
-
 * {
-  font-family: 'EFFRA_STD_LT', monospace !important;
+  font-family: 'EFFRA_STD_LT', monospace;
 }
-
 
 body {
   margin: 0;
@@ -17,6 +11,5 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

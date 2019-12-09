@@ -1,0 +1,18 @@
+
+@mixin fontface($path, $family, $type: '', $weight: 400, $style: normal) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$path}#{$family}#{$type}.TTF');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+//
+$dir: '../../shared/fonts/effra/';
+$family: 'EFFRA_STD';
+// adding specific types of font-weights
+@include fontface('#{$dir}', $family, '_LT', 100);
+@include fontface('#{$dir}', $family, '_RG', 400);
+@include fontface('#{$dir}', $family, '_MD', 500);
+@include fontface('#{$dir}', $family, '_BOLD', 700);

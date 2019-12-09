@@ -4,7 +4,7 @@ import { Container } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import React from 'react';
 
-import { theme } from '../../shared/theme/acelero-theme';
+import { theme } from '../../shared/theme/main-theme';
 import Buttons from '../types/Buttons';
 import Types from '../types/Types';
 

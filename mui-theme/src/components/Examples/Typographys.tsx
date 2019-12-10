@@ -16,23 +16,23 @@ export default function Types() {
 
   return (
     <div className={classes.root}>
-      <Typography variant="h1" component="h2" gutterBottom>
-        h1. Heading
+      <Typography variant="h1" gutterBottom>
+        h1. Heading aqui
       </Typography>
       <Typography variant="h2" gutterBottom>
-        h2. Heading
+        h2. Heading aqui
       </Typography>
       <Typography variant="h3" gutterBottom>
-        h3. Heading
+        h3. Heading aqui
       </Typography>
       <Typography variant="h4" gutterBottom>
-        h4. Heading
+        h4. Heading aqui
       </Typography>
       <Typography variant="h5" gutterBottom>
-        h5. Heading
+        h5. Heading aqui
       </Typography>
       <Typography variant="h6" gutterBottom>
-        h6. Heading
+        h6. Heading aqui
       </Typography>
       <Typography variant="subtitle1" gutterBottom>
         subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur

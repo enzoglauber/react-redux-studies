@@ -2,11 +2,30 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 export const theme = createMuiTheme({
   typography: {
-    fontFamily: "'EFFRA_STD_LT', Roboto, Helvetica, sans-serif",
+    fontFamily: '"effra", sans-serif',
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500,
+    fontWeightBold: 700,
+    h1: {      
+      fontWeight: 900,
+      fontSize: '64px',
+      lineHeight: '64px',
+    },
+    h2: {      
+      fontWeight: 700,
+      fontSize: '40px',
+      lineHeight: '40px',
+    },
+    h3: {      
+      fontWeight: 700,
+      fontSize: '32px;',
+      lineHeight: '40px',
+    }
   },
   palette: {
     primary: {      
-      main: '#5E389E',
+      main: '#5e389e',
     },
     secondary: {
       light: '#0066ff',
@@ -15,4 +34,5 @@ export const theme = createMuiTheme({
     }
   }
 })
+console.log('theme', theme)
 

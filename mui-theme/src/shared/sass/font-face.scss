@@ -1,18 +1,61 @@
 
-@mixin fontface($path, $family, $type: '', $weight: 400, $style: normal) {
-  @font-face {
-    font-family: $family;
-    src: url('#{$path}#{$family}#{$type}.TTF');
-    font-weight: $weight;
-    font-style: $style;
-  }
+
+@font-face {
+  font-family: 'effra-light';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local('effra'),
+    local('effra-light'),
+    url(../../shared/fonts/effra/EFFRA_STD_LT.TTF) format('ttf');
 }
 
-//
-$dir: '../../shared/fonts/effra/';
-$family: 'EFFRA_STD';
-// adding specific types of font-weights
-@include fontface('#{$dir}', $family, '_LT', 100);
-@include fontface('#{$dir}', $family, '_RG', 400);
-@include fontface('#{$dir}', $family, '_MD', 500);
-@include fontface('#{$dir}', $family, '_BOLD', 700);
+@font-face {
+  font-family: 'effra';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('effra'),
+    local('effra-regular'),
+    url(../../shared/fonts/effra/EFFRA_STD_RG.TTF) format('ttf');
+}
+
+@font-face {
+  font-family: 'effra-medium';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local('effra'),
+    local('effra-medium'),
+    url(../../shared/fonts/effra/EFFRA_STD_MD.TTF) format('ttf');
+}
+
+@font-face {
+  font-family: 'effra-bold';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('effra'),
+    local('effra-bold'),
+    url(../../shared/fonts/effra/EFFRA_STD_BOLD.TTF) format('ttf');
+}
+
+
+// @mixin fontface($path, $family, $type: '', $weight: 400, $style: normal) {
+//   @font-face {
+//     font-family: '#{$family}#{$type}';
+//     src:
+//       url(#{$path}#{$family}#{$type}.TTF) format('ttf');
+//     font-weight: $weight;
+//     font-style: $style;
+//   }
+// }
+
+// //
+// $dir: '../../shared/fonts/effra/';
+// $family: 'EFFRA_STD';
+// // adding specific types of font-weights
+// @include fontface('#{$dir}', $family, '_LT', 300);
+// @include fontface('#{$dir}', $family, '_RG', 400);
+// @include fontface('#{$dir}', $family, '_MD', 500);
+// @include fontface('#{$dir}', $family, '_BOLD', 700);

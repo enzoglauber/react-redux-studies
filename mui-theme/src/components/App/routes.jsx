@@ -1,4 +1,3 @@
-import { Container } from '@material-ui/core';
 import React from 'react';
 import { HashRouter, Redirect, Route } from 'react-router-dom';
 
@@ -8,11 +7,13 @@ import Vehicles from '../../pages/Vehicles';
 
 export default props => (
     <HashRouter>
-        <Container>
-            <Redirect from='*' to='/home' />
-            <Route path='/home' component={Home} />
-            <Route path='/lista' component={Vehicles} />
-            <Route path='/examples' component={Example} />
-        </Container>
+        
+        <Route exact path="/">
+            <Redirect to="/home" />
+        </Route>
+        <Route path='/home' component={Home} />
+        <Route path='/lista' component={Vehicles} />
+        <Route path='/examples' component={Example} />
+        <Redirect from='*' to='/home' />
     </HashRouter>
 )
